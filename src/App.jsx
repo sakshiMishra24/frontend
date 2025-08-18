@@ -13,7 +13,7 @@ function App() {
     try {
       setLoading(true);
     const response = await axios.get(
-  `https://backend-rouge-ten-39.vercel.app/weather/${city}`
+  `https://backend-rouge-ten-39.vercel.app/${city}`
 );
       setWeather(response.data);
     } catch (error) {
