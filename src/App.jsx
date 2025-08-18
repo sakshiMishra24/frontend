@@ -12,9 +12,9 @@ function App() {
     if (!city) return;
     try {
       setLoading(true);
-      const response = await axios.get(
-        `https://goweather.herokuapp.com/weather/${city}`
-      );
+    const response = await axios.get(
+  `https://backend-rouge-ten-39.vercel.app/weather/${city}`
+);
       setWeather(response.data);
     } catch (error) {
       console.error("Error fetching weather data:", error);
